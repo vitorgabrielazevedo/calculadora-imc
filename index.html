@@ -42,10 +42,44 @@
           </div>
         </form>
       </div>
-      <div id="result-container" class="">
+      <div id="result-container" class="hide">
         <p id="imc-numero">Seu IMC: <span>23.0</span></p>
         <p id="imc-info">Situação atual: <span>Normal</span></p>
         <h3>Confira as classificações:</h3>
+        <table id="imc-table">
+          <thead>
+            <th>IMC</th>
+            <th>Classificação</th>
+            <th>Obesidade</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Menor que 18,5</td>
+              <td>Baixo peso</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Entre 18,5 e 24,9</td>
+              <td>Peso normal</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Entre 25 e 29,9</td>
+              <td>Sobrepeso</td>
+              <td>I</td>
+            </tr>
+            <tr>
+              <td>Entre 30 e 39,9</td>
+              <td>Obesidade</td>
+              <td>II</td>
+            </tr>
+            <tr>
+              <td>Maior que 40</td>
+              <td>Obesidade grave</td>
+              <td>III</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </body>
