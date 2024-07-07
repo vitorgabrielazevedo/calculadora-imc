@@ -46,7 +46,7 @@ button:hover {
 
 #container {
   background-color: #222254;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1rem;
   min-width: 400px;
   min-height: 400px;
   border-radius: 15px;
@@ -80,6 +80,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  padding-top: 2rem;
 }
 
 #limpar-btn {
@@ -106,26 +107,31 @@ button:hover {
 
 #imc-table {
   margin: 1.5rem 0;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
-#imc-table thead tr th,
-#imc-table tbody tr td {
-  border-bottom: 1px solid #efefef;
-  padding: 0.25rem 0.5rem;
+.table-header,
+.table-dado {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #efefef;
 }
 
-#imc-table thead th,
-#imc-table tbody td {
+.table-header {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.table-header h4,
+.table-dado p {
   flex: 1;
 }
 
-#imc-table thead th:nth-child(3),
-#imc-table tbody td:nth-child(3) {
-  max-width: 80px;
+.table-header h4:nth-child(3),
+.table-dado p:nth-child(3) {
+  max-width: 85px;
 }
 
 #voltar-btn {
